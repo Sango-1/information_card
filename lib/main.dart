@@ -55,52 +55,47 @@ class MyApp extends StatelessWidget {
                         color: Colors.white,
                         fontWeight: FontWeight.bold),
                   ),
-                  Container(
-                    height: 40,
-                    width: 300,
-                    margin: EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                        color: Colors.white),
-                    child: Row(
-                      children: [
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(Icons.phone),
-                        Text(
-                          "   +91  7027194774",
-                          style: TextStyle(
-                              fontSize: 15,
-                              fontFamily: "SourceSansPro",
-                              color: Color.fromARGB(255, 2, 80, 81)),
-                        )
-                      ],
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(80, 0, 80, 0),
+                    child: SizedBox(
+                      height: 20,
+                      child: Divider(
+                        thickness: 0.7,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
-                  Container(
-                    height: 40,
-                    width: 300,
-                    margin: EdgeInsets.fromLTRB(15, 0, 15, 5),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      color: Colors.white,
+                  Card(
+                    margin: EdgeInsets.all(8),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.phone,
+                        color: Colors.black,
+                      ),
+                      title: Text(
+                        "   +91  7027194774",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontFamily: "SourceSansPro",
+                            color: Color.fromARGB(255, 10, 11, 11)),
+                      ),
                     ),
-                    child: Row(
-                      children: [
-                        SizedBox(
-                          width: 10,
+                  ),
+                  Card(
+                    margin: EdgeInsets.fromLTRB(8, 0, 8, 8),
+                    shadowColor: Colors.black,
+                    child: ListTile(
+                        leading: Icon(
+                          Icons.email,
+                          color: Colors.black,
                         ),
-                        Icon(Icons.email),
-                        Text(
+                        title: Text(
                           "     Atulsangwan1997@gmail.com",
                           style: TextStyle(
                               fontSize: 15,
                               fontFamily: "SourceSansPro",
                               color: Color.fromARGB(255, 2, 80, 81)),
-                        )
-                      ],
-                    ),
+                        )),
                   ),
                   SizedBox(
                     height: 60,
